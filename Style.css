@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+body {
+    background-color: white;
+    font-family:"Supermercado One";
+}
+
+#board {
+    position: relative;
+	width: 1024px;
+	height: 700px;
+	margin: auto;
+	background-color: gray;
+}
+
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 10;
+    color:black;
+}
+
+
+#shipnumber {
+    position: absolute;
+    top: 60;
+    left: 0;
+}
+
+#shipnumber input{
+    font-size: 15px;
+    width: 80px;
+    color: white;
+    background-color: black;
+}
+
+#score_board {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+}
+
+#guessFire {
+    position: absolute;
+    top: 90;
+    left: 0;
+}
+
+#sets_ship {
+    position: absolute;
+    bottom: 0;
+    right:10;
+}
+
+table {
+    border-spacing: 0px; 
+	border-collapse: collapse;
+	position: absolute;
+	width: 40vw;
+	left: 200px;
+	top: 150px;
+}
+
+.hit {
+	background: url("ship.png") no-repeat center center;
+}
+
+.miss {
+	background: url("miss.png") no-repeat center center;
+}
+
+.axis {
+	color: rgb(83, 175, 19);
+	border: 0px;
+	text-align: center;
+	font-size: 36px;
+}
+
+td {
+	border: 1px solid rgb(83, 175, 19);
+	background-color: black;
+}
+
+#messageArea {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: medium;
+    color: rgb(83, 175, 19);
+  }
+

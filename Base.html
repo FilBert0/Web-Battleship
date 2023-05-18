@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Battleship</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+	<body>
+		<div id="board">
+			<div id="title">
+				<h1>Battleship</h1>
+			</div>
+            <div id="messageArea"></div>
+			<table id="Table"></table>
+			<form id="shipnumber">
+				<input type="number" id="shipAmount" placeholder="Ships">
+				<input type="number" id="setAmount" placeholder="Sets">
+				<input type="number" id="boardSize" placeholder="Board">
+				<input type="button" id="submit" value="Submit">
+			</form>
+
+            <div id="score_board">
+				<h2>POINTS:</h2>
+				<h3>Player 1: <span id="score_player_1">0</span></h3>
+				<h3>Player 2: <span id="score_player_2">0</span></h3>
+				<h3>Player <span id="player_turn">1</span> Turn!</h3>
+			</div>
+
+            <div id="sets_ship">
+				<h3>Set <span id="cur_set">1</span></h3>
+				<h3>P1 <span id="player_1_win">0</span> - <span id="player_2_win">0</span> P2</h3>
+				<h3>Operating Ships: <span id="alive_ship">0</span></h3>
+				<h3>Sunken Ships: <span id="dead_ship">0</span></h3>
+			</div>
+
+            <form id="guessFire" autocomplete="off">
+				<input autocomplete="false" name="hidden" type="text" style="display:none;">
+				<input type="text" id="guessInput" placeholder="A0">
+				<input type="button" id="fireButton" value="Fire!">
+			</form>
+
+
+		</div>
+		<script src="Javascrip.js"></script>
+	</body>
+</html>
